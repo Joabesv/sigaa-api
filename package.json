@@ -27,7 +27,7 @@
     ],
     "scripts": {
         "build": "tsc --emitDeclarationOnly && babel src --extensions .ts --out-dir dist && node fix-declaration-paths.js",
-        "test": "jest --config jestconfig.json",
+        "test": "vitest run",
         "docs": "typedoc --categorizeByGroup --out docs src/sigaa-all-types.ts",
         "prepare": "npm run build"
     },
@@ -56,6 +56,7 @@
         "jest": "^27.0.6",
         "ts-jest": "^27.0.4",
         "typedoc": "^0.21.5",
-        "typescript": "^4.3.5"
+        "typescript": "^4.3.5",
+        "vitest": "^1.6.0"
     }
 }

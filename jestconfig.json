@@ -4,11 +4,6 @@
   "transform": {
     "^.+\\.(t|j)sx?$": "ts-jest"
   },
-  "roots": ["<rootDir>"],
-  "moduleFileExtensions": ["ts", "js", "json"],
-  "testRegex": "/src/[\\s\\S]*spec.ts$",
-  "modulePaths": ["<rootDir>"],
-  "modulePathIgnorePatterns": ["dist"],
   "moduleNameMapper": {
     "@sigaa": "<rootDir>/src/main",
     "@account(.*)": "<rootDir>/src/account/$1",

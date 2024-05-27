@@ -1,36 +1,10 @@
 {
+  "extends": "@total-typescript/tsconfig/tsc/no-dom/library", 
   "compilerOptions": {
-    "experimentalDecorators": true,
-    "target": "es2015",
-    "lib": ["ESNext.WeakRef", "dom"],
-    "declaration": true,
-    "outDir": "./dist",
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "baseUrl": ".",
-    "rootDir": "./src",
-    "strict": true,
-    "isolatedModules": true,
-    "noImplicitAny": true,
-    "preserveConstEnums": true,
-    "strictNullChecks": true,
-    "inlineSourceMap": true,
-    "emitDecoratorMetadata": true,
-    "forceConsistentCasingInFileNames": true,
-    "paths": {
-      "@account/*": ["./src/account/*"],
-      "@activity/*": ["./src/activity/*"],
-      "@attachments/*": ["./src/courses/resources/attachments/*"],
-      "@bonds/*": ["./src/bonds/*"],
-      "@courseResources/*": ["./src/courses/resources/*"],
-      "@courses/*": ["./src/courses/*"],
-      "@helpers/*": ["./src/helpers/*"],
-      "@resources/*": ["./src/resources/*"],
-      "@search/*": ["./src/search/*"],
-      "@session/*": ["./src/session/*"],
-      "@sigaa": ["./src/main"]
-    }
+  "outDir": "dist",
+  "baseUrl": "./",
+  "paths": {
+    "@/*": ["src/*"]
   },
-  "include": ["src"],
-  "exclude": ["node_modules", "**/spec.ts", "**__MOCKS__**"]
-}
+  "verbatimModuleSyntax": false
+}}
