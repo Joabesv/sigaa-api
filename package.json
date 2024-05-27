@@ -45,6 +45,7 @@
         "@babel/plugin-proposal-decorators": "^7.14.5",
         "@babel/preset-env": "^7.15.0",
         "@babel/preset-typescript": "^7.15.0",
+        "@biomejs/biome": "^1.7.3",
         "@total-typescript/tsconfig": "^1.0.4",
         "@types/cheerio": "^0.22.30",
         "@types/he": "^1.1.2",
