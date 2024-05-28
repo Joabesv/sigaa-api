@@ -1,7 +1,7 @@
-import { Homework } from '@attachments/sigaa-homework-student';
-import { StudentBond } from '@bonds/sigaa-student-bond';
-import { CourseStudent } from '@courses/sigaa-course-student';
-import { SigaaForm } from '@session/sigaa-page';
+import { Homework } from '@/courses/resources/attachments/sigaa-homework-student';
+import { StudentBond } from '@/bonds/sigaa-student-bond';
+import { CourseStudent } from '@/courses/sigaa-course-student';
+import { SigaaForm } from '@/session/sigaa-page';
 
 /**
  *
@@ -58,7 +58,7 @@ export class SigaaActivityHomework implements ActivityHomework {
 
   constructor(
     private activityData: ActivityHomeworkData,
-    private studentBond: StudentBond
+    private studentBond: StudentBond,
   ) {}
 
   /**

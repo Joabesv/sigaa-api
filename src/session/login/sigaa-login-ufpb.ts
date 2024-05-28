@@ -1,10 +1,10 @@
 import { LoginStatus } from '../../sigaa-types';
 import { URL } from 'url';
-import { HTTP } from '@session/sigaa-http';
-import { Session } from '@session/sigaa-session';
+import { HTTP } from '@/session/sigaa-http';
+import { Session } from '@/session/sigaa-session';
 import { Login } from './sigaa-login';
-import { UFPBPage } from '@session/page/sigaa-page-ufpb';
-import { SigaaForm } from '@session/sigaa-page';
+import { UFPBPage } from '@/session/page/sigaa-page-ufpb';
+import { SigaaForm } from '@/session/sigaa-page';
 
 /**
  * Responsible for logging in UFPB.

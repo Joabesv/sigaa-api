@@ -1,16 +1,16 @@
-import { Lesson } from '@courseResources/sigaa-lesson-student';
-import { NewsData, News } from '@courseResources/sigaa-news-student';
-import { Parser } from '@helpers/sigaa-parser';
-import { File } from '@resources/sigaa-file';
-import { HTTP } from '@session/sigaa-http';
+import { Lesson } from '@/courses/resources/sigaa-lesson-student';
+import { NewsData, News } from '@/courses/resources/sigaa-news-student';
+import { Parser } from '@/helpers/sigaa-parser';
+import { File } from '@/resources/sigaa-file';
+import { HTTP } from '@/session/sigaa-http';
 import { URL } from 'url';
-import { SigaaForm, Page } from '@session/sigaa-page';
-import { QuizData, Quiz } from '@attachments/sigaa-quiz-student';
-import { HomeworkData, Homework } from '@attachments/sigaa-homework-student';
-import { SigaaSurvey } from '@attachments/sigaa-survey-student';
+import { SigaaForm, Page } from '@/session/sigaa-page';
+import { QuizData, Quiz } from '@/courses/resources/attachments/sigaa-quiz-student';
+import { HomeworkData, Homework } from '@/courses/resources/attachments/sigaa-homework-student';
+import { SigaaSurvey } from '@/courses/resources/attachments/sigaa-survey-student';
 import { CourseResourcesManagerFactory } from './sigaa-course-resources-manager-factory';
-import { Exam } from '@courseResources/sigaa-exam-student';
-import { Syllabus } from '@courseResources/sigaa-syllabus-student';
+import { Exam } from '@/courses/resources/sigaa-exam-student';
+import { Syllabus } from '@/courses/resources/sigaa-syllabus-student';
 import { LessonParserFactory } from './sigaa-lesson-parser-factory';
 
 import {
@@ -18,27 +18,27 @@ import {
   SubGradeArithmeticAverage,
   SubGradeSumOfGrades,
   SubGradeWeightedAverage
-} from '@courseResources/sigaa-grades-student';
+} from '@/courses/resources/sigaa-grades-student';
 
 import {
   ForumData,
   CourseForum
-} from '@courseResources/forum/sigaa-course-forum-student';
+} from '@/courses/resources/forum/sigaa-course-forum-student';
 
 import {
   WebContent,
   WebContentData
-} from '@attachments/sigaa-web-content-student';
+} from '@/courses/resources/attachments/sigaa-web-content-student';
 import {
   AbsenceDay,
   AbsenceList
-} from '@courseResources/sigaa-absence-list-student';
+} from '@/courses/resources/sigaa-absence-list-student';
 
 import {
   MemberList,
   Student,
   Teacher
-} from '@courseResources/sigaa-member-list-student';
+} from '@/courses/resources/sigaa-member-list-student';
 
 /**
  * @category Internal

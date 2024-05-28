@@ -3,8 +3,8 @@ import { URL } from 'url';
 import { HTTP } from '../sigaa-http';
 import { Session } from '../sigaa-session';
 import { Login } from './sigaa-login';
-import { UNBPage } from '@session/page/sigaa-page-unb';
-import { SigaaForm } from '@session/sigaa-page';
+import { UNBPage } from '@/session/page/sigaa-page-unb';
+import { SigaaForm } from '@/session/sigaa-page';
 
 /**
  * Responsible for logging in UNB.

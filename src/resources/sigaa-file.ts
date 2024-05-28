@@ -1,5 +1,5 @@
-import { HTTP, ProgressCallback } from '@session/sigaa-http';
-import { SigaaForm } from '@session/sigaa-page';
+import { HTTP, ProgressCallback } from '@/session/sigaa-http';
+import { SigaaForm } from '@/session/sigaa-page';
 import { UpdatableResourceData } from './sigaa-resource-manager';
 import {
   AbstractUpdatableResource,

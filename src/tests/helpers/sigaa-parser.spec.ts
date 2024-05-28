@@ -1,4 +1,4 @@
-import { SigaaParser } from '@helpers/sigaa-parser';
+import { SigaaParser } from '@/helpers/sigaa-parser';
 
 test('if sigaa parser remove script tags', () => {
   const sigaaParser = new SigaaParser();

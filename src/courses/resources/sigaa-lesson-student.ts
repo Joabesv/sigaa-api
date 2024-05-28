@@ -1,17 +1,17 @@
-import { CourseForum } from '@courseResources/forum/sigaa-course-forum-student';
-import { Homework } from '@attachments/sigaa-homework-student';
-import { LinkAttachment } from '@attachments/sigaa-link-student';
-import { Quiz } from '@attachments/sigaa-quiz-student';
-import { Survey } from '@attachments/sigaa-survey-student';
-import { VideoAttachment } from '@attachments/sigaa-video-student';
-import { WebContent } from '@attachments/sigaa-web-content-student';
-import { File } from '@resources/sigaa-file';
-import { UpdatableResourceData } from '@resources/sigaa-resource-manager';
+import { CourseForum } from '@/courses/resources/forum/sigaa-course-forum-student';
+import { Homework } from '@/courses/resources/attachments/sigaa-homework-student';
+import { LinkAttachment } from '@/courses/resources/attachments/sigaa-link-student';
+import { Quiz } from '@/courses/resources/attachments/sigaa-quiz-student';
+import { Survey } from '@/courses/resources/attachments/sigaa-survey-student';
+import { VideoAttachment } from '@/courses/resources/attachments/sigaa-video-student';
+import { WebContent } from '@/courses/resources/attachments/sigaa-web-content-student';
+import { File } from '@/resources/sigaa-file';
+import { UpdatableResourceData } from '@/resources/sigaa-resource-manager';
 import {
   AbstractUpdatableResource,
   UpdatableResource,
   UpdatableResourceCallback
-} from '@resources/updatable-resource';
+} from '@/resources/updatable-resource';
 
 /**
  * @category Public

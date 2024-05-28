@@ -3,7 +3,7 @@ import {
   SigaaForm,
   CommonSigaaPage,
   SigaaPageConstructor
-} from '@session/sigaa-page';
+} from '@/session/sigaa-page';
 import { URL } from 'url';
 
 /**

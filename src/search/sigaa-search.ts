@@ -1,5 +1,5 @@
-import { Parser } from '@helpers/sigaa-parser';
-import { HTTP } from '@session/sigaa-http';
+import { Parser } from '@/helpers/sigaa-parser';
+import { HTTP } from '@/session/sigaa-http';
 import { SigaaSearchTeacher } from './sigaa-search-teacher';
 
 /**

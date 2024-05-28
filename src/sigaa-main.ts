@@ -1,59 +1,59 @@
-import { Account } from '@account/sigaa-account';
-import { BondFactory, SigaaBondFactory } from '@bonds/sigaa-bond-factory';
-import { Parser, SigaaParser } from '@helpers/sigaa-parser';
-import { FileData, SigaaFile } from '@resources/sigaa-file';
-import { SigaaSearch } from '@search/sigaa-search';
-import { HTTPSession, SigaaHTTPSession } from '@session/sigaa-http-session';
-import { HTTP } from '@session/sigaa-http';
-import { HTTPFactory, SigaaHTTPFactory } from '@session/sigaa-http-factory';
-import { Login } from '@session/login/sigaa-login';
-import { SigaaLoginIFSC } from '@session/login/sigaa-login-ifsc';
-import { SigaaLoginUFPB } from '@session/login/sigaa-login-ufpb';
-import { Session, SigaaSession } from '@session/sigaa-session';
-import { SigaaCookiesController } from '@session/sigaa-cookies-controller';
-import { SigaaPageCacheWithBond } from '@session/sigaa-page-cache-with-bond';
-import { SigaaPageCacheFactory } from '@session/sigaa-page-cache-factory';
+import { Account } from '@/account/sigaa-account';
+import { BondFactory, SigaaBondFactory } from '@/bonds/sigaa-bond-factory';
+import { Parser, SigaaParser } from '@/helpers/sigaa-parser';
+import { FileData, SigaaFile } from '@/resources/sigaa-file';
+import { SigaaSearch } from '@/search/sigaa-search';
+import { HTTPSession, SigaaHTTPSession } from '@/session/sigaa-http-session';
+import { HTTP } from '@/session/sigaa-http';
+import { HTTPFactory, SigaaHTTPFactory } from '@/session/sigaa-http-factory';
+import { Login } from '@/session/login/sigaa-login';
+import { SigaaLoginIFSC } from '@/session/login/sigaa-login-ifsc';
+import { SigaaLoginUFPB } from '@/session/login/sigaa-login-ufpb';
+import { Session, SigaaSession } from '@/session/sigaa-session';
+import { SigaaCookiesController } from '@/session/sigaa-cookies-controller';
+import { SigaaPageCacheWithBond } from '@/session/sigaa-page-cache-with-bond';
+import { SigaaPageCacheFactory } from '@/session/sigaa-page-cache-factory';
 
 import {
   AccountFactory,
   SigaaAccountFactory
-} from '@account/sigaa-account-factory';
+} from '@/account/sigaa-account-factory';
 import {
   BondController,
   SigaaBondController
-} from '@session/sigaa-bond-controller';
+} from '@/session/sigaa-bond-controller';
 import {
   CourseFactory,
   SigaaCourseFactory
-} from '@courses/sigaa-course-student-factory';
+} from '@/courses/sigaa-course-student-factory';
 import {
   CourseResourcesManagerFactory,
   SigaaCourseResourceManagerFactory
-} from '@courses/sigaa-course-resources-manager-factory';
+} from '@/courses/sigaa-course-resources-manager-factory';
 import {
   CourseResourcesFactory,
   SigaaCourseResourcesFactory
-} from '@courses/sigaa-course-resources-factory';
+} from '@/courses/sigaa-course-resources-factory';
 import {
   LessonParserFactory,
   SigaaLessonParserFactory
-} from '@courses/sigaa-lesson-parser-factory';
+} from '@/courses/sigaa-lesson-parser-factory';
 import { XOR } from './sigaa-types';
-import { RequestStackController } from '@helpers/sigaa-request-stack';
-import { Request } from '@session/sigaa-http-session';
-import { CookiesController } from '@session/sigaa-cookies-controller';
-import { SigaaRequestStack } from '@helpers/sigaa-request-stack';
-import { SigaaLoginUNB } from '@session/login/sigaa-login-unb';
+import { RequestStackController } from '@/helpers/sigaa-request-stack';
+import { Request } from '@/session/sigaa-http-session';
+import { CookiesController } from '@/session/sigaa-cookies-controller';
+import { SigaaRequestStack } from '@/helpers/sigaa-request-stack';
+import { SigaaLoginUNB } from '@/session/login/sigaa-login-unb';
 import {
   InstitutionType,
   SigaaInstitutionController,
   SigaaLoginInstitutionMap
-} from '@session/sigaa-institution-controller';
+} from '@/session/sigaa-institution-controller';
 import {
   ActivityFactory,
   SigaaActivityFactory
-} from '@activity/sigaa-activity-factory';
-import { Page } from '@session/sigaa-page';
+} from '@/activity/sigaa-activity-factory';
+import { Page } from '@/session/sigaa-page';
 
 /**
  * @category Internal

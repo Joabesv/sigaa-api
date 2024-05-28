@@ -1,7 +1,7 @@
-import { Quiz } from '@attachments/sigaa-quiz-student';
-import { StudentBond } from '@bonds/sigaa-student-bond';
-import { CourseStudent } from '@courses/sigaa-course-student';
-import { SigaaForm } from '@session/sigaa-page';
+import { Quiz } from '@/courses/resources/attachments/sigaa-quiz-student';
+import { StudentBond } from '@/bonds/sigaa-student-bond';
+import { CourseStudent } from '@/courses/sigaa-course-student';
+import { SigaaForm } from '@/session/sigaa-page';
 
 /**
  *

@@ -1,5 +1,5 @@
-import { Parser } from '@helpers/sigaa-parser';
-import { HTTP, ProgressCallback } from '@session/sigaa-http';
+import { Parser } from '@/helpers/sigaa-parser';
+import { HTTP, ProgressCallback } from '@/session/sigaa-http';
 
 /**
  * @category Internal

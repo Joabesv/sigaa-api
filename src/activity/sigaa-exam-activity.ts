@@ -1,6 +1,6 @@
-import { StudentBond } from '@bonds/sigaa-student-bond';
-import { Exam } from '@courseResources/sigaa-exam-student';
-import { CourseStudent } from '@courses/sigaa-course-student';
+import { StudentBond } from '@/bonds/sigaa-student-bond';
+import { Exam } from '@/courses/resources/sigaa-exam-student';
+import { CourseStudent } from '@/courses/sigaa-course-student';
 
 /**
  *

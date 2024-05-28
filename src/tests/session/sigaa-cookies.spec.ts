@@ -1,4 +1,4 @@
-import { SigaaCookiesController } from '@session/sigaa-cookies-controller';
+import { SigaaCookiesController } from '@/session/sigaa-cookies-controller';
 
 test('if Sigaa cookie controller save cookies', () => {
   const cookieController = new SigaaCookiesController();

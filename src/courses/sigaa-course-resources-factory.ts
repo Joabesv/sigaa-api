@@ -1,10 +1,10 @@
-import { Parser } from '@helpers/sigaa-parser';
-import { HTTP } from '@session/sigaa-http';
+import { Parser } from '@/helpers/sigaa-parser';
+import { HTTP } from '@/session/sigaa-http';
 
-import { UpdatableResourceCallback } from '@resources/updatable-resource';
-import { News, NewsData, SigaaNews } from '@courseResources/sigaa-news-student';
-import { Quiz, QuizData, SigaaQuiz } from '@attachments/sigaa-quiz-student';
-import { FileData, SigaaFile, File } from '@resources/sigaa-file';
+import { UpdatableResourceCallback } from '@/resources/updatable-resource';
+import { News, NewsData, SigaaNews } from '@/courses/resources/sigaa-news-student';
+import { Quiz, QuizData, SigaaQuiz } from '@/courses/resources/attachments/sigaa-quiz-student';
+import { FileData, SigaaFile, File } from '@/resources/sigaa-file';
 
 import {
   Lesson,
@@ -16,25 +16,25 @@ import {
   SigaaWebContent,
   WebContent,
   WebContentData
-} from '@attachments/sigaa-web-content-student';
+} from '@/courses/resources/attachments/sigaa-web-content-student';
 
 import {
   CourseForum,
   ForumData,
   SigaaCourseForum
-} from '@courseResources/forum/sigaa-course-forum-student';
+} from '@/courses/resources/forum/sigaa-course-forum-student';
 
 import {
   Homework,
   HomeworkData,
   SigaaHomework
-} from '@attachments/sigaa-homework-student';
+} from '@/courses/resources/attachments/sigaa-homework-student';
 import {
   SigaaSurvey,
   Survey,
   SurveyData
-} from '@attachments/sigaa-survey-student';
-import { sharedReturn } from '@helpers/sigaa-shared-return-decorator-factory';
+} from '@/courses/resources/attachments/sigaa-survey-student';
+import { sharedReturn } from '@/helpers/sigaa-shared-return-decorator-factory';
 
 /**
  * Create instances of course resources.
