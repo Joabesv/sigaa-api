@@ -1,6 +1,5 @@
 import { Parser } from '@/helpers/sigaa-parser';
 import { HTTP } from '@/session/sigaa-http';
-import { sharedReturn } from '@/helpers/sigaa-shared-return-decorator-factory';
 import { CourseResourcesManagerFactory } from './sigaa-course-resources-manager-factory';
 
 import {
@@ -30,7 +29,6 @@ export class SigaaCourseFactory implements CourseFactory {
     private lessonParserFactory: LessonParserFactory
   ) {}
 
-  @sharedReturn()
   createCourseStudent(courseData: CourseStudentData): SigaaCourseStudent {
     return new SigaaCourseStudent(
       courseData,

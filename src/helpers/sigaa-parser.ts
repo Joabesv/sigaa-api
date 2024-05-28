@@ -1,4 +1,5 @@
-import { decode as htmlEntitiesDecode } from 'he';
+import he from 'he';
+const { decode: htmlEntitiesDecode } = he;
 
 /**
  * Text sanitizer and date parser.

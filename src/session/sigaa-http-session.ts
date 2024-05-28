@@ -1,4 +1,4 @@
-import { isEqual } from 'lodash';
+import lodash from 'lodash';
 import { RequestStacks } from '@/helpers/sigaa-request-stack';
 import { URL } from 'url';
 import {
@@ -11,6 +11,8 @@ import { PageCache } from './sigaa-page-cache';
 import { CookiesController } from './sigaa-cookies-controller';
 import { RequestStackController } from '../helpers/sigaa-request-stack';
 import { InstitutionController } from './sigaa-institution-controller';
+
+const { isEqual } = lodash
 
 /**
  * Manage a http session

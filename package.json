@@ -2,8 +2,14 @@
     "name": "sigaa-api",
     "description": "Unofficial high performance API for SIGAA IFSC using web scraping.",
     "version": "1.0.35",
-    "main": "dist/sigaa-all-types.js",
-    "types": "dist/sigaa-all-types.d.ts",
+    "main": "dist/sigaa-main.mjs",
+    "types": "dist/sigaa-main.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/sigaa-main.mjs",
+            "require": "./dist/sigaa-main.cjs"
+        }
+    },
     "author": "Geovane Schmitz <contato@geovanems.com.br>",
     "license": "MIT",
     "private": false,
@@ -25,7 +31,7 @@
         "typescript"
     ],
     "scripts": {
-        "build": "tsc --emitDeclarationOnly && babel src --extensions .ts --out-dir dist && node fix-declaration-paths.js",
+        "build": "tsup src/sigaa-main.ts --dts --format=esm --clean",
         "test": "vitest run",
         "docs": "typedoc --categorizeByGroup --out docs src/sigaa-all-types.ts",
         "prepare": "npm run build"
@@ -43,9 +49,9 @@
         "@types/cheerio": "^0.22.30",
         "@types/he": "^1.1.2",
         "@types/lodash": "^4.14.172",
+        "tsup": "^8.0.2",
         "typedoc": "^0.21.5",
         "typescript": "^5.4.5",
-        "unplugin-swc": "^1.4.5",
         "vitest": "^1.6.0"
     }
 }

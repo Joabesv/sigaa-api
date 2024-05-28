@@ -34,7 +34,6 @@ import {
   Survey,
   SurveyData
 } from '@/courses/resources/attachments/sigaa-survey-student';
-import { sharedReturn } from '@/helpers/sigaa-shared-return-decorator-factory';
 
 /**
  * Create instances of course resources.
@@ -97,7 +96,6 @@ export interface CourseResourcesFactory {
 export class SigaaCourseResourcesFactory implements CourseResourcesFactory {
   constructor(private parser: Parser) {}
 
-  @sharedReturn()
   createHomeworkFromHomeworkData(
     options: HomeworkData,
     http: HTTP,
@@ -106,7 +104,7 @@ export class SigaaCourseResourcesFactory implements CourseResourcesFactory {
     return new SigaaHomework(http, this, options, updateCallback);
   }
 
-  @sharedReturn()
+  
   createWebContentFromWebContentData(
     options: WebContentData,
     http: HTTP,
@@ -123,7 +121,7 @@ export class SigaaCourseResourcesFactory implements CourseResourcesFactory {
     return new SigaaLesson(options, updateCallback);
   }
 
-  @sharedReturn()
+  
   createFileFromFileData(
     options: FileData,
     http: HTTP,
@@ -132,7 +130,7 @@ export class SigaaCourseResourcesFactory implements CourseResourcesFactory {
     return new SigaaFile(http, options, updateCallback);
   }
 
-  @sharedReturn()
+  
   createForumFromForumData(
     options: ForumData,
     http: HTTP,
@@ -147,7 +145,7 @@ export class SigaaCourseResourcesFactory implements CourseResourcesFactory {
     );
   }
 
-  @sharedReturn()
+  
   createNewsFromNewsData(
     options: NewsData,
     http: HTTP,
@@ -156,7 +154,7 @@ export class SigaaCourseResourcesFactory implements CourseResourcesFactory {
     return new SigaaNews(http, this.parser, options, updateCallback);
   }
 
-  @sharedReturn()
+  
   createQuizFromQuizData(
     options: QuizData,
     http: HTTP,
@@ -165,7 +163,7 @@ export class SigaaCourseResourcesFactory implements CourseResourcesFactory {
     return new SigaaQuiz(http, options, updateCallback);
   }
 
-  @sharedReturn()
+  
   createSurveyFromSurveyData(
     options: SurveyData,
     http: HTTP,

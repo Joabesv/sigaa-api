@@ -1,6 +1,8 @@
-import { isEqual } from 'lodash';
+import lodash from 'lodash';
 import { HTTPRequestOptions } from './sigaa-http';
 import { Page } from './sigaa-page';
+
+const { isEqual } = lodash
 
 /**
  * @category Internal

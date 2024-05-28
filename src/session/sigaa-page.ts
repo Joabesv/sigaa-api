@@ -1,12 +1,14 @@
-import { decode as htmlEntitiesDecode } from 'he';
+import he from 'he';
 import { URL } from 'url';
 import * as http from 'http';
 import { load as $load } from 'cheerio';
-import { HTTPMethod } from 'src/sigaa-types';
+import { HTTPMethod } from '@/sigaa-types';
 import { HTTPRequestOptions } from './sigaa-http';
 import { IFSCPage, SigaaPageIFSC } from './page/sigaa-page-ifsc';
 import { SigaaPageUFPB, UFPBPage } from './page/sigaa-page-ufpb';
 import { SigaaPageUNB, UNBPage } from './page/sigaa-page-unb';
+
+const { decode: htmlEntitiesDecode } = he;
 
 /**
  * @category Internal
