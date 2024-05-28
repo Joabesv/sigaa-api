@@ -1,21 +1,16 @@
-import { HTTP } from '@session/sigaa-http';
-import { Homework, HomeworkData } from '@attachments/sigaa-homework-student';
-import { Quiz, QuizData } from '@attachments/sigaa-quiz-student';
-import { Survey, SurveyData } from '@attachments/sigaa-survey-student';
-import { FileData, File } from '@resources/sigaa-file';
-import { ResourceManager } from '@resources/sigaa-resource-manager';
+import { HTTP } from '@/session/sigaa-http';
+import { Homework, HomeworkData } from '@/courses/resources/attachments/sigaa-homework-student';
+import { Quiz, QuizData } from '@/courses/resources/attachments/sigaa-quiz-student';
+import { Survey, SurveyData } from '@/courses/resources/attachments/sigaa-survey-student';
+import { FileData, File } from '@/resources/sigaa-file';
+import { ResourceManager } from '@/resources/sigaa-resource-manager';
 import { CourseResourcesFactory } from './sigaa-course-resources-factory';
 import { Lesson, LessonData } from './resources/sigaa-lesson-student';
 import { News, NewsData } from './resources/sigaa-news-student';
 import { CourseStudent } from './sigaa-course-student';
-import {
-  CourseForum,
-  ForumData
-} from '@courseResources/forum/sigaa-course-forum-student';
-import {
-  WebContent,
-  WebContentData
-} from '@attachments/sigaa-web-content-student';
+import { CourseForum, ForumData } from '@/courses/resources/forum/sigaa-course-forum-student';
+import { WebContent, WebContentData } from '@/courses/resources/attachments/sigaa-web-content-student';
+
 /**
  * Class that stores course resources.
  * @category Internal

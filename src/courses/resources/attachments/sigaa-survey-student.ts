@@ -1,10 +1,10 @@
-import { UpdatableResourceData } from '@resources/sigaa-resource-manager';
+import { UpdatableResourceData } from '@/resources/sigaa-resource-manager';
 import {
   AbstractUpdatableResource,
   UpdatableResource,
   UpdatableResourceCallback
-} from '@resources/updatable-resource';
-import { SigaaForm } from '@session/sigaa-page';
+} from '@/resources/updatable-resource';
+import { SigaaForm } from '@/session/sigaa-page';
 
 /**
  * @category Internal

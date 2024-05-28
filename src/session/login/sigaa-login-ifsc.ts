@@ -3,8 +3,8 @@ import { URL } from 'url';
 import { HTTP } from '../sigaa-http';
 import { Session } from '../sigaa-session';
 import { Login } from './sigaa-login';
-import { IFSCPage } from '@session/page/sigaa-page-ifsc';
-import { SigaaForm } from '@session/sigaa-page';
+import { IFSCPage } from '@/session/page/sigaa-page-ifsc';
+import { SigaaForm } from '@/session/sigaa-page';
 
 /**
  * Responsible for logging in IFSC.

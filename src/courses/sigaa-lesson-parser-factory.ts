@@ -1,4 +1,4 @@
-import { Parser } from '@helpers/sigaa-parser';
+import { Parser } from '@/helpers/sigaa-parser';
 import { CourseResourcesManager } from './sigaa-course-resources-manager';
 import { LessonParser, SigaaLessonParser } from './sigaa-lesson-parser';
 

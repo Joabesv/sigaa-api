@@ -1,14 +1,14 @@
-import { CourseFactory } from '@courses/sigaa-course-student-factory';
-import { Parser } from '@helpers/sigaa-parser';
-import { HTTP } from '@session/sigaa-http';
+import { CourseFactory } from '@/courses/sigaa-course-student-factory';
+import { Parser } from '@/helpers/sigaa-parser';
+import { HTTP } from '@/session/sigaa-http';
 import { URL } from 'url';
 import {
   CourseStudent,
   CourseStudentData
-} from '@courses/sigaa-course-student';
-import { Homework } from '@attachments/sigaa-homework-student';
-import { Exam } from '@courseResources/sigaa-exam-student';
-import { Activity, ActivityFactory } from '@activity/sigaa-activity-factory';
+} from '@/courses/sigaa-course-student';
+import { Homework } from '@/courses/resources/attachments/sigaa-homework-student';
+import { Exam } from '@/courses/resources/sigaa-exam-student';
+import { Activity, ActivityFactory } from '@/activity/sigaa-activity-factory';
 
 /**
  * Abstraction to represent a student bond.

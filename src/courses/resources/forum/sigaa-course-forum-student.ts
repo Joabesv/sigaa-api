@@ -1,16 +1,16 @@
 import { URL } from 'url';
 import { FormData } from 'formdata-node';
-import { Parser } from '@helpers/sigaa-parser';
-import { File, FileData } from '@resources/sigaa-file';
+import { Parser } from '@/helpers/sigaa-parser';
+import { File, FileData } from '@/resources/sigaa-file';
 import {
   AbstractUpdatableResource,
   UpdatableResource,
   UpdatableResourceCallback
-} from '@resources/updatable-resource';
-import { HTTP } from '@session/sigaa-http';
-import { SigaaForm, Page } from '@session/sigaa-page';
-import { CourseResourcesFactory } from '@courses/sigaa-course-resources-factory';
-import { UpdatableResourceData } from '@resources/sigaa-resource-manager';
+} from '@/resources/updatable-resource';
+import { HTTP } from '@/session/sigaa-http';
+import { SigaaForm, Page } from '@/session/sigaa-page';
+import { CourseResourcesFactory } from '@/courses/sigaa-course-resources-factory';
+import { UpdatableResourceData } from '@/resources/sigaa-resource-manager';
 
 /**
  * Object that contains basic information about the class forum.

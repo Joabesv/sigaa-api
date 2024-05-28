@@ -1,6 +1,6 @@
-import { CourseResourcesFactory } from '@courses/sigaa-course-resources-factory';
-import { CourseResourcesManager } from '@courses/sigaa-course-resources-manager';
-import { HTTP } from '@session/sigaa-http';
+import { CourseResourcesFactory } from '@/courses/sigaa-course-resources-factory';
+import { CourseResourcesManager } from '@/courses/sigaa-course-resources-manager';
+import { HTTP } from '@/session/sigaa-http';
 import { CourseStudent } from './sigaa-course-student';
 
 /**

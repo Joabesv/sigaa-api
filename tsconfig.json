@@ -1,10 +1,14 @@
 {
   "extends": "@total-typescript/tsconfig/tsc/no-dom/library", 
   "compilerOptions": {
-  "outDir": "dist",
-  "baseUrl": "./",
-  "paths": {
-    "@/*": ["src/*"]
-  },
-  "verbatimModuleSyntax": false
-}}
+    "outDir": "dist",
+    "baseUrl": "./",
+    "strict": false,
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "verbatimModuleSyntax": false,
+    "noUncheckedIndexedAccess": false,
+    "experimentalDecorators": true
+  }
+}

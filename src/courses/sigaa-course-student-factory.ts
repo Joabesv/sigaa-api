@@ -1,6 +1,6 @@
-import { Parser } from '@helpers/sigaa-parser';
-import { HTTP } from '@session/sigaa-http';
-import { sharedReturn } from '@helpers/sigaa-shared-return-decorator-factory';
+import { Parser } from '@/helpers/sigaa-parser';
+import { HTTP } from '@/session/sigaa-http';
+import { sharedReturn } from '@/helpers/sigaa-shared-return-decorator-factory';
 import { CourseResourcesManagerFactory } from './sigaa-course-resources-manager-factory';
 
 import {

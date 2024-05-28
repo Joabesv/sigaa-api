@@ -12,8 +12,10 @@ export function sharedReturn() {
     propertyKey: string,
     descriptor: PropertyDescriptor
   ): void {
-    if (target.kind !== 'method')
+    if (target?.kind !== 'method') {
+      console.log(target)
       throw new Error('SIGAA: SharedReturn is only supported on methods.');
+    }
 
     const originalMethod = target.descriptor.value; // save a reference to the original method
     const store = '__sharedReturn' + target.key;

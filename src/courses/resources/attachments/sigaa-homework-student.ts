@@ -1,16 +1,16 @@
 import { URL } from 'url';
-import { FileData } from '@resources/sigaa-file';
-import { HTTP } from '@session/sigaa-http';
-import { SigaaForm } from '@session/sigaa-page';
-import { File } from '@resources/sigaa-file';
-import { CourseResourcesFactory } from '@courses/sigaa-course-resources-factory';
+import { FileData } from '@/resources/sigaa-file';
+import { HTTP } from '@/session/sigaa-http';
+import { SigaaForm } from '@/session/sigaa-page';
+import { File } from '@/resources/sigaa-file';
+import { CourseResourcesFactory } from '@/courses/sigaa-course-resources-factory';
 
 import {
   AbstractUpdatableResource,
   UpdatableResource,
   UpdatableResourceCallback
-} from '@resources/updatable-resource';
-import { UpdatableResourceData } from '@resources/sigaa-resource-manager';
+} from '@/resources/updatable-resource';
+import { UpdatableResourceData } from '@/resources/sigaa-resource-manager';
 
 /**
  * @category Internal

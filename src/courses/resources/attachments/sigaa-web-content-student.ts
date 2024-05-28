@@ -1,13 +1,13 @@
-import { Parser } from '@helpers/sigaa-parser';
-import { UpdatableResourceData } from '@resources/sigaa-resource-manager';
-import { HTTP } from '@session/sigaa-http';
-import { SigaaForm } from '@session/sigaa-page';
+import { Parser } from '@/helpers/sigaa-parser';
+import { UpdatableResourceData } from '@/resources/sigaa-resource-manager';
+import { HTTP } from '@/session/sigaa-http';
+import { SigaaForm } from '@/session/sigaa-page';
 
 import {
   AbstractUpdatableResource,
   UpdatableResource,
   UpdatableResourceCallback
-} from '@resources/updatable-resource';
+} from '@/resources/updatable-resource';
 
 /**
  * @category Internal

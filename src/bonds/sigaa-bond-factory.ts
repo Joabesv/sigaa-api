@@ -1,8 +1,8 @@
-import { ActivityFactory } from '@activity/sigaa-activity-factory';
-import { CourseFactory } from '@courses/sigaa-course-student-factory';
-import { Parser } from '@helpers/sigaa-parser';
-import { HTTP } from '@session/sigaa-http';
-import { HTTPFactory } from '@session/sigaa-http-factory';
+import { ActivityFactory } from '@/activity/sigaa-activity-factory';
+import { CourseFactory } from '@/courses/sigaa-course-student-factory';
+import { Parser } from '@/helpers/sigaa-parser';
+import { HTTP } from '@/session/sigaa-http';
+import { HTTPFactory } from '@/session/sigaa-http-factory';
 import { URL } from 'url';
 import { SigaaStudentBond, StudentBond } from './sigaa-student-bond';
 import { SigaaTeacherBond, TeacherBond } from './sigaa-teacher-bond';

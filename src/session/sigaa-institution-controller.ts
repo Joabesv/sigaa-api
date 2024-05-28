@@ -1,6 +1,6 @@
-import { SigaaAccountIFSC } from '@account/sigaa-account-ifsc';
-import { SigaaAccountUFPB } from '@account/sigaa-account-ufpb';
-import { SigaaAccountUNB } from '@account/sigaa-account-unb';
+import { SigaaAccountIFSC } from '@/account/sigaa-account-ifsc';
+import { SigaaAccountUFPB } from '@/account/sigaa-account-ufpb';
+import { SigaaAccountUNB } from '@/account/sigaa-account-unb';
 import { SigaaLoginIFSC } from './login/sigaa-login-ifsc';
 import { SigaaLoginUFPB } from './login/sigaa-login-ufpb';
 import { SigaaLoginUNB } from './login/sigaa-login-unb';

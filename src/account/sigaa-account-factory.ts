@@ -1,13 +1,13 @@
-import { BondFactory } from '@bonds/sigaa-bond-factory';
-import { Parser } from '@helpers/sigaa-parser';
-import { HTTP } from '@session/sigaa-http';
-import { Page } from '@session/sigaa-page';
-import { Session } from '@session/sigaa-session';
+import { BondFactory } from '@/bonds/sigaa-bond-factory';
+import { Parser } from '@/helpers/sigaa-parser';
+import { HTTP } from '@/session/sigaa-http';
+import { Page } from '@/session/sigaa-page';
+import { Session } from '@/session/sigaa-session';
 import { Account } from './sigaa-account';
 import { SigaaAccountIFSC } from './sigaa-account-ifsc';
 import { SigaaAccountUFPB } from './sigaa-account-ufpb';
 import { SigaaAccountUNB } from './sigaa-account-unb';
-import { SigaaAccountInstitutionMap } from '@session/sigaa-institution-controller';
+import { SigaaAccountInstitutionMap } from '@/session/sigaa-institution-controller';
 
 /**
  * Abstraction to represent the class that instantiates the account.

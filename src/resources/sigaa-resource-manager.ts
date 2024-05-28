@@ -1,4 +1,4 @@
-import { UpdatableResource } from '@resources/updatable-resource';
+import { UpdatableResource } from '@/resources/updatable-resource';
 
 /**
  * @category Internal

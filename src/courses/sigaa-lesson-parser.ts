@@ -1,15 +1,15 @@
-import { Page, SigaaForm } from '@session/sigaa-page';
-import { LinkAttachment } from '@attachments/sigaa-link-student';
-import { VideoAttachment } from '@attachments/sigaa-video-student';
-import { Parser } from '@helpers/sigaa-parser';
-import { Attachment, LessonData } from '@courseResources/sigaa-lesson-student';
-import { Quiz } from '@attachments/sigaa-quiz-student';
-import { Survey } from '@attachments/sigaa-survey-student';
-import { ForumData } from '@courseResources/forum/sigaa-course-forum-student';
-import { Homework } from '@attachments/sigaa-homework-student';
+import { Page, SigaaForm } from '@/session/sigaa-page';
+import { LinkAttachment } from '@/courses/resources/attachments/sigaa-link-student';
+import { VideoAttachment } from '@/courses/resources/attachments/sigaa-video-student';
+import { Parser } from '@/helpers/sigaa-parser';
+import { Attachment, LessonData } from '@/courses/resources/sigaa-lesson-student';
+import { Quiz } from '@/courses/resources/attachments/sigaa-quiz-student';
+import { Survey } from '@/courses/resources/attachments/sigaa-survey-student';
+import { ForumData } from '@/courses/resources/forum/sigaa-course-forum-student';
+import { Homework } from '@/courses/resources/attachments/sigaa-homework-student';
 
-import { CourseResourcesManager } from '@courses/sigaa-course-resources-manager';
-import { UpdatableResourceData } from '@resources/sigaa-resource-manager';
+import { CourseResourcesManager } from '@/courses/sigaa-course-resources-manager';
+import { UpdatableResourceData } from '@/resources/sigaa-resource-manager';
 
 /**
  * @category Internal
